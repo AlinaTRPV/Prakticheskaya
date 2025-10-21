@@ -23,12 +23,47 @@ const DescriptionPage = () => {
                         src="/images/2.jpeg"
                         alt="жабонька"
                         className='img-fluid rounded-circle shadow-lg mb-3'
-                        style={{width: '200px', height: '200px', objectFit: 'cover', }}
+                        style={{width: '200px', height: '200px', objectFit: 'cover', transition: 'transform 0.3s ease'}}
+                        onMouseEnter={(event) => event.target.style.transform = 'scale(1.2)'}
+                        onMouseLeave={(event) => event.target.style.transform = 'scale(1)'}
                         />
+                        <h4 className='text-white mb-0'>Торопова Алина</h4>
+                       <p className='text-white'>Frontend, DevOps</p>
                       </div>
 
                     </div>
 
+                  </div>
+                  <div className='col-md-8'>
+                    <div className='p-5'>
+                      <div className='mb-4'>
+                        <h3 className='text-primary mb-4'>Личная информация</h3>
+                        <div className='row'>
+                          <div className='col-md-6'>
+                            <p className='mb-2'><b>Полное имя:</b>Торопова Алина Игоревна</p>
+                            <p className='mb-2'><b>Возраст:</b>31</p>
+                            <p className='mb-2'><b>Место рождения:</b>Ярославская область, г. Ростов</p>
+                          </div>
+                          <div className='col-md-6'>
+                            <p className='mb-2'><b>Email:</b>asdfghhgfdf@mail.ru</p>
+                            <p className='mb-2'><b>Телефон:</b>+7(910)815-58-17</p>
+                            <p className='mb-2'><b>Статус:</b><span className='badge bg-warning'>В поиске работы</span></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='mb-4'>
+                        <h3 className='text-warning mb-4'>Образование</h3>
+                        <div className='card bg-light'>
+                          <div className='card-body'>
+                            <h5 className='card-title'>РАНХИГС при Президенте РФ</h5>
+                            <p className='card-text mb-1'>Юридический факультет им. М.М. Сперанского</p>
+                            <p className='card-text mb-1'>2012-2016 г.</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                    </div>
                   </div>
                 </div>
               </div>
