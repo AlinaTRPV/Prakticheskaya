@@ -8,6 +8,7 @@ import CardsPage from './pages/CardsPage';
 import TablesPage from './pages/TablesPage';
 import PeoplePage from './pages/PeoplePage';
 import DescriptionPage from './pages/DescriptionPage';
+import FormsPage from './pages/FormsPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Link to="/tables" className="text-white text-decoration-none me-3">Таблички</Link> 
               <Link to="/human" className="text-white text-decoration-none me-3">Человечки</Link> 
               <Link to="/description" className="text-white text-decoration-none me-3">Описание</Link> 
+              <Link to="/forms" className="text-white text-decoration-none me-3">Формы</Link> 
             </div>
           </div>
         </div>
@@ -37,6 +39,7 @@ function App() {
           <Route path="/tables" element={<TablesPage/>}/>
           <Route path="/human" element={<PeoplePage/>}/>
           <Route path="/description" element={<DescriptionPage/>}/>
+          <Route path="/forms" element={<FormsPage/>}/>
         </Routes>
       </main>
       <footer className="bg-secondary py-3 mt-auto">
